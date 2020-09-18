@@ -10,6 +10,6 @@ Release Information
 
 Project developed using:
 
-Language: PHP
-Backend: Codeigniter
-Frontend:Html,CSS,Jquery 
+Language: PHP #
+Backend: Codeigniter #
+Frontend:Html,CSS,Jquery # 
