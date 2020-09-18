@@ -1,0 +1,214 @@
+The MIT License (MIT)
+
+Copyright (c) 2014 - 2019, British Columbia Institute of Technology
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+
+1)  bilty:-
+
+	add/edit
+	basic detail 
+	mode of money
+	backend: trip id, front end: trip date/truck number)
+
+	===total 2 hours
+
+	listing with trip id/trip date/link of trip
+	sort by trip id
+	sort by date end- date start
+	sort by truck
+
+
+2) 	Trip:
+	Trip ID
+	Trip start date: input
+	Trip end date: input
+	Truck No: input
+	External Source of income: 
+	Company Name input, Money input, total weight input, date input
+	
+	2 hours
+
+	expenses module by ajax/javascript(1-10)
+	2 hour
+
+	i) expenses description, 
+	ii) expenses for(truck no, trip id hidden),
+	iii) mode: 
+	dropdown: cash,bank 1, bank 2 bank 3, wallet 1, wallet 2, wallet 3 
+   	iv) ref id
+	
+
+	listing
+	----------
+	with trip id/trip date/link of bilties
+	sort by date end- date start
+	sort by truck no
+
+
+
+3) expenses/assets
+	i) expenses/assets	
+    
+    ii) expenses for inputs(or)
+    		truct no, 
+    		trip id(dropdown to show trip id-truck no-start date-end date)
+    		others(static drip down, salary, other) -> other enabled-> text box
+   	iv) expenses mode
+   		dropdown: static cash,bank 1, bank 2 bank 3, wallet 1, wallet 2, wallet 3 
+   	v)ref id
+    
+    iii) basic details
+    
+    2 hour
+
+    listing
+    -------
+    by truck no
+    by trip id
+    by start date to end date
+    by expenses/assets
+
+
+
+4) Account Statement:
+4) databae
+1 hour
+
+
+
+expenses
+id
+description
+expenses/assets
+truck
+trip
+other
+amount(1,0)
+date
+
+
+
+Start date to end date
+1) description
+2) ref no
+2) debit
+3) credit
+4) mode(cash,bank 1, bank 2 bank 3, wallet 1, wallet 2, wallet 3)
+
+
+
+4) Customer module
+customer name
+custom mobile
+customer address
+5) import export
+
+
+
+
+
+insert(){
+	inputdata=[];
+	expenses=[];
+	post vaidation(){
+		inputdata=$_posT[INPUT];
+		expenses=['EXPENDES'];
+		ERROR OR SUCCESS
+	}
+}
+
+update(){
+	inputdata=data from database;
+	expenses=data from database;
+	post vaidation(){
+		inputdata=$_posT[INPUT];
+		expenses=['EXPENDES'];
+		ERROR OR SUCCESS
+	}
+}
+delete(){
+	status change
+}
+listing(){
+	
+}
+
+
+$value=isset($inputdata['name'])?$inputdata['name']:'';
+<input name="name" value="<?php $value ?>">
+
+foreach($selectitems){
+$selected=isset(inputdata['name']) && inputdata['name']==$key?selected:'';
+<select>
+option value="<?php echo $key ?>" <?php echo $selected ?>><?php echo $value ?></option>
+</select>
+	
+}
+
+insert show
+expenses['decp'][0]
+expanes['other'][0]
+
+expenses['decp'][1]
+expanes['other'][1]
+
+update
+foreach by trip id{
+
+expenses['id'][0]
+expenses['decp'][0]
+expanes['other'][0]
+
+expenses['id'][1]
+expenses['decp'][1]
+expanes['other'][1]
+
+i++
+}
+
+for by i to 10
+expenses['decp'][i]
+expanes['other'][i]
+
+
+
+insert trip
+start
+insert other details
+callexpenses(tripid,truck id, array)
+statement
+end
+
+update
+start
+update other details
+callexpenses(tripid,truck id, array)
+statement
+end
+
+
+expenses(array){
+expenses if id 
+	$this->update
+else if
+	$this->insert	
+}
+

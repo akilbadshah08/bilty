@@ -1,0 +1,43 @@
+replace module_folder to template_folder name in admin/customer.php
+
+add a boot strap link " <link href="<?php echo base_url() ?>/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> " in view/admin/inc/header.php
+
+add and create new custome_layout.min.css " <link href="<?php echo base_url() ?>assets/layouts/layout4/css/custome_layout.min.css" rel="stylesheet" type="text/css" /> " in view/admin/inc/header.php
+
+add fields in views/agent/lead/add.php, /edit-step-1.php, /edit-step-2.php , edit-step-3.php
+
+add header.php footer.php and subheader folder in view/agent/inc  folder
+note -: if any problem are occure old file are their
+
+
+add some style in view/agent/inc/header.php 
+
+remove code in controller/agent/customer.php
+note =: removel code are commented
+
+add css in file assets-2/vendors/base/vendors.bundle.css line 3114   3139
+.select2-container--bootstrap .select2-selection {
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+    background-color: #fff;
+    border: 1px solid #c2cad8;
+    border-radius: 4px;
+    color: #555;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    outline: 0;
+} 
+
+not use
+http://wordpress.stackexchange.com/questions/97176/get-product-id-from-order-id-in-woocommerce
+
+
+admin change
+
+1. change header.php
+2. change "module_folder_name" to template_folder in controller/admin/lead.php 
+3. add "style height: 34px;" in /assets-2/demo/demo7/base/style.bundle.css folder line 26715
+
+
+
+          

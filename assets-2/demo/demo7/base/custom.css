@@ -1,0 +1,50 @@
+.heading-seprator{
+    /*border-top: 1px solid #dedede;*/
+    /*border-bottom: 1px solid #dedede;*/
+    padding: 1em 0.5em;
+    margin-bottom:1em;
+    background: #f4f5f8;
+}
+.heading-seprator label,
+.heading-seprator h1,
+.heading-seprator h2,
+.heading-seprator h3,
+.heading-seprator h4,
+.heading-seprator h5,
+.heading-seprator h6 {
+    margin: 0;
+}
+.form-horizontal .m-form__actions {
+    padding: 30px;
+}
+.m-widget19_document {
+    position: relative;
+}
+.m-widget19_document .m-widget19__action {
+    margin: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.comment-text {
+    height: auto;
+    padding: 10px;
+    box-shadow: 0 0 5px #d4d4d4;
+    margin-bottom: 22px;
+    border-radius: 60px;
+}
+.fix-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    z-index: 9999;
+}
+@media only screen and (max-width: 600px) {
+    .m-grid--desktop.m-body{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    padding-top: 75px !important;
+    }
+}
